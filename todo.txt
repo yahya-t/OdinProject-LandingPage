@@ -1,0 +1,25 @@
+1. nav bar
+
+2. top section
+  - left side
+    -- title
+    -- paragraph
+    -- button
+  - right side
+    -- image
+
+2. second section
+  - top title
+  - 4 images with text underneath
+
+3. third section
+  - qoute
+
+4. fourth section
+  - banner
+    -- title
+    -- text underneath
+    -- button to the right
+
+5. footer
+  - copyright text
