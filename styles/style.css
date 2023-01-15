@@ -2,9 +2,7 @@
 
 * {
   font-family: 'Ubuntu', sans-serif;
-  /* border: 1px;
-  border-style: solid;
-  border-color: red; */
+  /* border: 1px solid red; */
   margin: 0;
 }
 
@@ -13,19 +11,18 @@ body {
   background-size: 800% 800%;
   animation: MainBackground 18s ease infinite;
   height: 100vh;
-  /* box-sizing: border-box; */
 }
 
-/* HEADER */
+/* ----- HEADER ----- */
 #navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 5vh;
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 5em;
+  padding-right: 5em;
   background: white;
   border-width: 0 0 1em 0;
   border-style: solid;
@@ -42,7 +39,74 @@ body {
   flex: 1;
 }
 
-/* BACKGROUND ANIMATION */
+/* ----- FIRST SECTION ----- */
+#firstSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  overflow: auto;
+  box-sizing: border-box;
+  background: #b2f8fe;
+}
+
+#firstSection-leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#firstSection-leftContent p {
+  text-align: justify;
+}
+
+#btnSignUp {
+  width: fit-content;
+  padding: 0.7em 1.2em 0.7em 1.2em;
+  margin-top: 0.5em;
+  appearance: none;
+  background-color: #2e88a4;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 5px 5px 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#btnSignUp:hover {
+  background-color: #1a6d86;
+}
+
+#btnSignUp:focus {
+  box-shadow: #1a6d866e 0 0 0 3px;
+  outline: none;
+}
+
+#btnSignUp:active {
+  background-color: #1a6d86;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+#firstSection-rightContent {
+  flex: 1;
+
+}
+
+#scenary-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+/* ----- BACKGROUND ANIMATION ----- */
 @keyframes MainBackground {
   0% {
     background-position: 72% 0%
@@ -57,7 +121,7 @@ body {
   }
 }
 
-/* LINK ANIMATION */
+/* ----- LINK ANIMATION ----- */
 a {
   position: relative;
   color: #000;
