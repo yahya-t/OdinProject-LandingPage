@@ -13,6 +13,19 @@ body {
   height: 100vh;
 }
 
+h2 {
+  color: whitesmoke;
+
+}
+
+p {
+  color: rgb(202, 202, 202);
+}
+
+img {
+  border-radius: 5px;
+}
+
 /* ----- HEADER WIDE SCREEN ----- */
 @media screen and (min-width: 500px) {
   #navbar {
@@ -75,7 +88,8 @@ body {
   padding-right: 5em;
   overflow: auto;
   box-sizing: border-box;
-  background: linear-gradient(99.9deg, rgb(42, 6, 88) 21.2%, rgb(92, 59, 121) 84.8%);}
+  background: linear-gradient(99.9deg, rgb(42, 6, 88) 21.2%, rgb(92, 59, 121) 84.8%);
+}
 
 #firstSection-leftContent {
   flex: 1;
@@ -86,12 +100,10 @@ body {
 
 #firstSection-leftContent h2 {
   text-align: left;
-  color: whitesmoke;
 }
 
 #firstSection-leftContent p {
   text-align: left;
-  color: rgb(202, 202, 202);
 }
 
 #btnSignUp {
@@ -136,6 +148,52 @@ body {
   border-radius: 5px;
 }
 
+/* ----- SECOND SECTION ----- */
+#secondSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  overflow: auto;
+  box-sizing: border-box;
+  background: linear-gradient(99.9deg, rgb(42, 6, 88) 21.2%, rgb(92, 59, 121) 84.8%);
+}
+
+#secondSection h2 {
+  flex: 1;
+  text-align: left;
+}
+
+#planet-row {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.planet-column {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.planet-column img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.planet-description {
+  text-align: center;
+  font-weight: bold;
+}
+
+
 
 /* ----- BACKGROUND ANIMATION ----- */
 @keyframes MainBackground {
@@ -178,4 +236,24 @@ a::before {
 
 a:hover::before {
   transform: scaleX(1);
+}
+
+/* ----- GRADIENT BORDER ------ */
+.gradient-border {
+  border-radius: 5px;
+  --angle: 0deg;
+  border: 5px solid;
+  border-image: linear-gradient(var(--angle), #743ad5, #d53a9d) 1;
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
