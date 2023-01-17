@@ -82,7 +82,7 @@ img {
   flex-direction: row;
   justify-content: space-evenly;
   gap: 50px;
-  padding-top: 3em;
+  padding-top: 5em;
   padding-bottom: 3em;
   padding-left: 5em;
   padding-right: 5em;
@@ -154,7 +154,7 @@ img {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 20px;
-  padding-top: 3em;
+  padding-top: 5em;
   padding-bottom: 3em;
   padding-left: 5em;
   padding-right: 5em;
@@ -193,6 +193,35 @@ img {
   font-weight: bold;
 }
 
+/* ----- THIRD SECTION ----- */
+#thirdSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  overflow: auto;
+  box-sizing: border-box;
+  background: linear-gradient(99.9deg, rgb(42, 6, 88) 21.2%, rgb(92, 59, 121) 84.8%);
+}
+
+#qoute {
+  flex: 1;
+  font-size: 250%;
+  font-style: italic;
+  text-align: center;
+}
+
+#qoutee {
+  flex: 1;
+  padding-top: 1em;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: right;
+}
 
 
 /* ----- BACKGROUND ANIMATION ----- */
@@ -252,6 +281,7 @@ a:hover::before {
     --angle: 360deg;
   }
 }
+
 @property --angle {
   syntax: '<angle>';
   initial-value: 0deg;
