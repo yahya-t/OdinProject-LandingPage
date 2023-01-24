@@ -63,8 +63,8 @@ img {
   }
 
   #main-logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
   }
 
@@ -104,6 +104,7 @@ img {
 
 #firstSection-leftContent p {
   text-align: left;
+  font-size: 120%;
 }
 
 #btnSignUp {
@@ -221,6 +222,82 @@ img {
   font-size: 150%;
   font-weight: bold;
   text-align: right;
+}
+
+/* ----- FOURTH SECTION ----- */
+#fourthSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: linear-gradient(99.9deg, rgb(42, 6, 88) 21.2%, rgb(92, 59, 121) 84.8%);
+}
+
+#bottom-banner {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  background: white;
+  padding: 3em;
+  border-radius: 5px;
+  width: 80%;
+}
+
+#bottom-banner-text {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+#banner-title {
+  text-align: left;
+  width: fit-content;
+}
+
+#banner-text {
+  width: fit-content;
+  color: black;
+}
+
+#banner-button {
+  justify-content: right;
+  width: fit-content;
+  padding: 0.7em 1.2em 0.7em 1.2em;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  appearance: none;
+  background-color: #4d0b86;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 5px 5px 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#banner-button:hover {
+  background-color: #320459;
+  box-shadow: #8b25e470 0 0 0 3px;
+  outline: none;
+}
+
+#banner-button:focus {
+  box-shadow: #8b25e470 0 0 0 3px;
+  outline: none;
+}
+
+#banner-button:active {
+  background-color: #320459;
+  box-shadow: none;
+  outline: none;
 }
 
 
