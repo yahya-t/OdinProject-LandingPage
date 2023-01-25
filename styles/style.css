@@ -15,7 +15,6 @@ body {
 
 h2 {
   color: whitesmoke;
-
 }
 
 p {
@@ -247,7 +246,7 @@ img {
   background: white;
   padding: 3em;
   border-radius: 5px;
-  width: 80%;
+  /* width: 80%; */
 }
 
 #bottom-banner-text {
@@ -264,6 +263,7 @@ img {
 #banner-text {
   width: fit-content;
   color: black;
+  font-size: 110%;
 }
 
 #banner-button {
@@ -300,6 +300,17 @@ img {
   outline: none;
 }
 
+/* ----- FOOTER ----- */
+footer {
+  display: flex;
+  color: whitesmoke;
+  background: purple;
+  padding: 2em;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 110%;
+}
 
 /* ----- BACKGROUND ANIMATION ----- */
 @keyframes MainBackground {
@@ -349,6 +360,28 @@ a:hover::before {
   border-radius: 5px;
   --angle: 0deg;
   border: 5px solid;
+  border-image: linear-gradient(var(--angle), #743ad5, #d53a9d) 1;
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* ----- GRADIENT BORDER ------ */
+.footer-gradient-border {
+  border-radius: 5px;
+  --angle: 0deg;
+  border-width: 5px 0px 0px 0px;
+  border-style: solid;
   border-image: linear-gradient(var(--angle), #743ad5, #d53a9d) 1;
   animation: 5s rotate linear infinite;
 }
